@@ -1,0 +1,223 @@
+<!DOCTYPE html><html lang="zh-TW" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>Hexo + Github 免費架站筆記 (一) | jing的設計筆記-網頁設計/平面設計</title><meta name="author" content="jing"><meta name="copyright" content="jing"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="上了6角體驗課程，今年(2024)有新上架 「Hexo 部落格架站任務」，紀錄一下架站筆記跟自己架站體驗。  Hexo 靜態部落格，只秀東西給人看，不能購物電商，沒有動態資料庫~ 可以掛 google AD 廣告。 使用 markdown 語法寫文章，不是像 WordPress 後臺編輯器那種。 想要選單有子選單也要靠模板 HEXO 模板 ，建議找在 github 上星星數高的，  話說之前有在">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Hexo + Github 免費架站筆記 (一)">
+<meta property="og:url" content="https://potato0202.github.io/jingblog/HexoAndGithub/index.html">
+<meta property="og:site_name" content="jing的設計筆記-網頁設計&#x2F;平面設計">
+<meta property="og:description" content="上了6角體驗課程，今年(2024)有新上架 「Hexo 部落格架站任務」，紀錄一下架站筆記跟自己架站體驗。  Hexo 靜態部落格，只秀東西給人看，不能購物電商，沒有動態資料庫~ 可以掛 google AD 廣告。 使用 markdown 語法寫文章，不是像 WordPress 後臺編輯器那種。 想要選單有子選單也要靠模板 HEXO 模板 ，建議找在 github 上星星數高的，  話說之前有在">
+<meta property="og:locale" content="zh_TW">
+<meta property="og:image" content="https://d33wubrfki0l68.cloudfront.net/6657ba50e702d84afb32fe846bed54fba1a77add/827ae/logo.svg">
+<meta property="article:published_time" content="2024-06-16T07:06:24.000Z">
+<meta property="article:modified_time" content="2024-06-16T16:07:48.764Z">
+<meta property="article:author" content="jing">
+<meta property="article:tag" content="Hexo架站">
+<meta property="article:tag" content="Hexo">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://d33wubrfki0l68.cloudfront.net/6657ba50e702d84afb32fe846bed54fba1a77add/827ae/logo.svg"><link rel="shortcut icon" href="/jingblog/images/favicon.png"><link rel="canonical" href="https://potato0202.github.io/jingblog/HexoAndGithub/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/jingblog/css/index.css?v=4.13.0"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.1/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-snackbar@0.1.16/dist/snackbar.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0.33/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = {
+  root: '/jingblog/',
+  algolia: undefined,
+  localSearch: {"path":"/jingblog/search.xml","preload":false,"top_n_per_article":1,"unescape":false,"languages":{"hits_empty":"找不到您查詢的內容：${query}","hits_stats":"共找到 ${hits} 篇文章"}},
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '複製成功',
+    error: '複製錯誤',
+    noSupport: '瀏覽器不支援'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: '剛剛',
+    min: '分鐘前',
+    hour: '小時前',
+    day: '天前',
+    month: '個月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: {"chs_to_cht":"你已切換為繁體中文","cht_to_chs":"你已切換為簡體中文","day_to_night":"你已切換為深色模式","night_to_day":"你已切換為淺色模式","bgLight":"#49b1f5","bgDark":"#1f1f1f","position":"bottom-left"},
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid@4.11.1/dist/infinitegrid.min.js',
+    buttonText: '載入更多'
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: true,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'Hexo + Github 免費架站筆記 (一)',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2024-06-17 00:07:48'
+}</script><script>(win=>{
+      win.saveToLocal = {
+        set: (key, value, ttl) => {
+          if (ttl === 0) return
+          const now = Date.now()
+          const expiry = now + ttl * 86400000
+          const item = {
+            value,
+            expiry
+          }
+          localStorage.setItem(key, JSON.stringify(item))
+        },
+      
+        get: key => {
+          const itemStr = localStorage.getItem(key)
+      
+          if (!itemStr) {
+            return undefined
+          }
+          const item = JSON.parse(itemStr)
+          const now = Date.now()
+      
+          if (now > item.expiry) {
+            localStorage.removeItem(key)
+            return undefined
+          }
+          return item.value
+        }
+      }
+    
+      win.getScript = (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        script.onerror = reject
+        script.onload = script.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          script.onload = script.onreadystatechange = null
+          resolve()
+        }
+
+        Object.keys(attr).forEach(key => {
+          script.setAttribute(key, attr[key])
+        })
+
+        document.head.appendChild(script)
+      })
+    
+      win.getCSS = (url, id = false) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onerror = reject
+        link.onload = link.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          link.onload = link.onreadystatechange = null
+          resolve()
+        }
+        document.head.appendChild(link)
+      })
+    
+      win.activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+        if (t === 'dark') activateDarkMode()
+        else if (t === 'light') activateLightMode()
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+      const detectApple = () => {
+        if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+          document.documentElement.classList.add('apple')
+        }
+      }
+      detectApple()
+    })(window)</script><meta name="generator" content="Hexo 7.2.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/jingblog/images/avatar.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/jingblog/archives/"><div class="headline">文章</div><div class="length-num">9</div></a><a href="/jingblog/tags/"><div class="headline">標籤</div><div class="length-num">8</div></a><a href="/jingblog/categories/"><div class="headline">分類</div><div class="length-num">3</div></a></div><hr class="custom-hr"/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/jingblog/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-book"></i><span> 文章</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/jingblog/archives/"><i class="fa-fw fas fa-archive"></i><span> 歸檔</span></a></li><li><a class="site-page child" href="/jingblog/tags/"><i class="fa-fw fas fa-tags"></i><span> 標籤</span></a></li><li><a class="site-page child" href="/jingblog/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分類</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 清單</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/jingblog/music/"><i class="fa-fw fas fa-music"></i><span> Music(先放著)</span></a></li><li><a class="site-page child" href="/jingblog/movies/"><i class="fa-fw fas fa-video"></i><span> Movie(先放著)</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/jingblog/link/"><i class="fa-fw fas fa-link"></i><span> 好站收集</span></a></div><div class="menus_item"><a class="site-page" href="/jingblog/about/"><i class="fa-fw fas fa-heart"></i><span> 關於我</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://d33wubrfki0l68.cloudfront.net/6657ba50e702d84afb32fe846bed54fba1a77add/827ae/logo.svg')"><nav id="nav"><span id="blog-info"><a href="/jingblog/" title="jing的設計筆記-網頁設計/平面設計"><span class="site-name">jing的設計筆記-網頁設計/平面設計</span></a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search" href="javascript:void(0);"><i class="fas fa-search fa-fw"></i><span> 搜尋</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/jingblog/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-book"></i><span> 文章</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/jingblog/archives/"><i class="fa-fw fas fa-archive"></i><span> 歸檔</span></a></li><li><a class="site-page child" href="/jingblog/tags/"><i class="fa-fw fas fa-tags"></i><span> 標籤</span></a></li><li><a class="site-page child" href="/jingblog/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分類</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 清單</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/jingblog/music/"><i class="fa-fw fas fa-music"></i><span> Music(先放著)</span></a></li><li><a class="site-page child" href="/jingblog/movies/"><i class="fa-fw fas fa-video"></i><span> Movie(先放著)</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/jingblog/link/"><i class="fa-fw fas fa-link"></i><span> 好站收集</span></a></div><div class="menus_item"><a class="site-page" href="/jingblog/about/"><i class="fa-fw fas fa-heart"></i><span> 關於我</span></a></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">Hexo + Github 免費架站筆記 (一)</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">發表於</span><time class="post-meta-date-created" datetime="2024-06-16T07:06:24.000Z" title="發表於 2024-06-16 15:06:24">2024-06-16</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新於</span><time class="post-meta-date-updated" datetime="2024-06-16T16:07:48.764Z" title="更新於 2024-06-17 00:07:48">2024-06-17</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/jingblog/categories/Hexo/">Hexo</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="Hexo + Github 免費架站筆記 (一)"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">閱讀量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><p>上了6角體驗課程，今年(2024)有新上架 「Hexo 部落格架站任務」，紀錄一下架站筆記跟自己架站體驗。</p>
+<ul>
+<li>Hexo 靜態部落格，只秀東西給人看，不能購物電商，沒有動態資料庫~</li>
+<li>可以掛 google AD 廣告。</li>
+<li>使用 markdown 語法寫文章，不是像 WordPress 後臺編輯器那種。</li>
+<li>想要選單有子選單也要靠模板</li>
+<li><a target="_blank" rel="noopener" href="https://hexo.io/themes/">HEXO 模板</a> ，建議找在 github 上星星數高的，</li>
+</ul>
+<p>話說之前有在 hahow 買一堂 Hugo 架站的課，但架起來沒有繼續寫筆記就荒廢了。<br>有看到學員架了一個類似官網的靜態網站。<br>不管是 Hugo 還是 Hexo 都蠻依賴你選擇的版型(感覺 WordPress 也是)，除非自己有辦法修改。<br>啊如果想要什麼輪播功能也是要看版型有沒有，大部分都沒有🥲畢竟這東西初衷就是部落格用的~</p>
+<p>進入正題~<br>會使用 Visual Studio Code（簡稱VS Code） 來寫 code </p>
+<h2 id="Hexo-部落格架站任務，先把環境架起來"><a href="#Hexo-部落格架站任務，先把環境架起來" class="headerlink" title="Hexo 部落格架站任務，先把環境架起來"></a>Hexo 部落格架站任務，先把環境架起來</h2><p>先下載 <a target="_blank" rel="noopener" href="https://nodejs.org/en">node.js</a> 安裝<br>在 VS Code [檢視] → [終端] 打以下指令 :</p>
+<ul>
+<li>node -v   ( -v前面有空格哦!! 會出現表示node js版本，例如 v20.14.0 )</li>
+<li>npm -v </li>
+<li>git -v ( 有點忘記這邊要不要先安裝 git，如果現在沒裝也可以先裝，後面會需要，到 <a target="_blank" rel="noopener" href="https://www.git-scm.com/downloads">git 官網</a> 安裝下載 )</li>
+<li>npm install -g hexo-cli ( 安裝  hexo-cli 這個 npm 套件，g 表示裝在整個電腦上，在電腦的根目錄， C 槽幫你做全站安裝 )</li>
+<li>hexo -v ( 安裝成功會寫版本號，例如 hexo-cli 4.3.2 )</li>
+</ul>
+<p>這時候!! 輸入完 <code>hexo -v</code> 出現錯誤!!<br><img src="https://firebasestorage.googleapis.com/v0/b/lifeblog-84616.appspot.com/o/hexo%20-v%E5%87%BA%E7%8F%BE%E9%8C%AF%E8%AA%A4.png?alt=media&token=cc262b62-0de6-4f49-a4e8-308d0de6afa3"></p>
+<p>跑去看6角的體驗營 Discord 看有沒有人有同樣問題</p>
+<blockquote>
+<p>看到解答，照這位 <a target="_blank" rel="noopener" href="https://akoncc.github.io/2019/11/01/vscode-cant-run-script/">blog 版主</a> 寫的操作就可以了~<br>文章底下那個 BUT 問題也有遇到😂</p>
+</blockquote>
+<h2 id="新增一個你放-blog-檔案的資料夾-與-終端機操作"><a href="#新增一個你放-blog-檔案的資料夾-與-終端機操作" class="headerlink" title="新增一個你放 blog 檔案的資料夾 與 終端機操作"></a>新增一個你放 blog 檔案的資料夾 與 終端機操作</h2><ul>
+<li>前往指令 : <code>cd</code> → 表示前往到專案資料夾</li>
+<li>終端機操作分享 : <a target="_blank" rel="noopener" href="https://w3c.hexschool.com/git/8dc4619b">https://w3c.hexschool.com/git/8dc4619b</a></li>
+</ul>
+<p>先在桌面或其他地方(也許D槽)新增一個資料夾，<br>在 VScode 輸入 <code>cd</code> → 空白鍵空格 → 然後將你剛剛建立的資料夾(例如:桌面的hexo0522資料夾)拖曳進來，按下enter，就OK~<br>上方的「終端機操作分享」有影片教學。</p>
+<h2 id="hexo指令"><a href="#hexo指令" class="headerlink" title="hexo指令"></a>hexo指令</h2><h3 id="01-建立部落格-hexo-init"><a href="#01-建立部落格-hexo-init" class="headerlink" title="01.建立部落格 : hexo init"></a>01.建立部落格 : hexo init</h3><p>輸入指令<code>hexo init 你的網站名稱(ex: coffeeshop)</code>(hexo init後方有空白哦)，<br>他會在 hexo0522 資料夾裡頭出現一個 coffeeshop 資料夾。<br>coffeeshop 資料夾裡頭有很多 hexo 相關檔案~</p>
+<p>我自己是在桌面建立”hexo_web”資料夾，輸入指令 <code>hexo init lifeblog</code> </p>
+<p>下次要開檔案可以 「檔案」&gt;「開啟資料夾」選擇 coffeeshop (我是lifeblog)資料夾，就不用再打 cd 指令。</p>
+<h3 id="02-開啟伺服器-hexo-server"><a href="#02-開啟伺服器-hexo-server" class="headerlink" title="02.開啟伺服器 : hexo server"></a>02.開啟伺服器 : hexo server</h3><p>輸入指令 <code>hexo server</code> ，<a target="_blank" rel="noopener" href="http://localhost:4000/">http://localhost:4000/</a>  就是你的站，可看外觀， Ctrl + C 會關閉 server。<br>要關閉伺服器才能繼續打指令~<br><img src="https://firebasestorage.googleapis.com/v0/b/lifeblog-84616.appspot.com/o/hexo%20server.png?alt=media&token=63cd52d7-c7a7-4546-be7e-821b7096652c"></p>
+<h3 id="03-輸出實際網頁-hexo-generate"><a href="#03-輸出實際網頁-hexo-generate" class="headerlink" title="03.輸出實際網頁 : hexo generate"></a>03.輸出實際網頁 : hexo generate</h3><p>輸入指令 <code>hexo generate</code>，出現了public資料夾!!<br>hexo generate 編譯動作，編譯出網頁看得懂的格式。</p>
+<h3 id="04-新增一篇部落格-hexo-new-“部落格標題”"><a href="#04-新增一篇部落格-hexo-new-“部落格標題”" class="headerlink" title="04.新增一篇部落格 : hexo new “部落格標題”"></a>04.新增一篇部落格 : hexo new “部落格標題”</h3><p><img src="https://firebasestorage.googleapis.com/v0/b/lifeblog-84616.appspot.com/o/hexo%20new.png?alt=media&token=57a28e29-6543-4e16-a1f1-86b76ad9d456"></p>
+<p>圖中範例，輸入指令 <code>hexo new &quot;新文章&quot;</code>，就會在 source &#x2F;_posts 資料夾 ( 看左側面板 ) 裡頭產生了一個新的 md 檔案叫做「新文章」，點進去編輯檔案內容文字，用 markdown 語法 ( md 其實瀏覽器看不懂，也是透過編譯才懂)</p>
+<p>「如何寫 markdown 語法」&gt;&gt; <a href="">這裡看</a></p>
+<blockquote>
+<p>我這邊自己在 _posts 資料夾 右鍵新增好幾個分類用資料夾，例如 : css、photoshp，<br>然後複製舊的 md 檔案到這些資料夾裡頭，用舊的 md 檔案改寫，測試過上傳到 github 都是可以觀看的~</p>
+</blockquote>
+<h3 id="05-新增頁面-hexo-new-page-頁面名稱"><a href="#05-新增頁面-hexo-new-page-頁面名稱" class="headerlink" title="05.新增頁面 : hexo new page 頁面名稱"></a>05.新增頁面 : hexo new page 頁面名稱</h3><p>輸入指令 <code>hexo new page about</code>  會新增一個 about 資料夾，裡頭有 index.md 檔。<br><img src="https://firebasestorage.googleapis.com/v0/b/lifeblog-84616.appspot.com/o/hexo%20new%20page.png?alt=media&token=6ddb56b7-3b50-4dba-8344-4b75a9fac2eb"></p>
+<blockquote>
+<p>並不是出現在_posts 資料夾裡，跟上面的<code>hexo new &quot;新文章&quot;</code>不一樣<br>如果是取名 about 有可能會自動出現在選單中，假設這個 md 頁面沒出現在 menu 選單中，想要這 md 頁面出現在選單，我用的hexo模板( butterfly )是要到 _config.butterfly.yml 設定檔裡頭，找到 menu 的地方手動新增。看別人套用 Next 模板也有相同操作~<br><img src="https://firebasestorage.googleapis.com/v0/b/lifeblog-84616.appspot.com/o/hexo%E9%81%B8%E5%96%AE.png?alt=media&token=de185f0a-6008-4c3a-a1dc-6dce276749ae"></p>
+</blockquote>
+<h3 id="06-清除快取-hexo-clean"><a href="#06-清除快取-hexo-clean" class="headerlink" title="06. 清除快取 : hexo clean"></a>06. 清除快取 : hexo clean</h3><p>有遇到奇怪的問題例如沒更新到，輸入指令 <code>hexo clean</code> 試試看，會清除快取檔案 (db.json) 以及編譯檔案 (public)</p>
+<h3 id="07-部屬網站-hexo-deploy"><a href="#07-部屬網站-hexo-deploy" class="headerlink" title="07. 部屬網站 : hexo deploy"></a>07. 部屬網站 : hexo deploy</h3><p>這個最後部署到 GitHub Page 的時候會用到~</p>
+<hr>
+<h2 id="全站設定"><a href="#全站設定" class="headerlink" title="全站設定 :"></a>全站設定 :</h2><p>_config.yml &gt;&gt; 可以設定網站title、關鍵字、description這些，後續會需要修改</p>
+<hr>
+<h2 id="安裝-theme-內建樣版"><a href="#安裝-theme-內建樣版" class="headerlink" title="安裝 theme 內建樣版"></a>安裝 theme 內建樣版</h2><p>讓你新增頁面，像是about時，MENU會出現項目，目前 themes 資料夾是空的(只有1個.gitkeep檔案)<br><a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo-theme-landscape">樣板連結</a><br>裡頭有安裝教學~</p>
+<p>這邊我們使用 git 安裝，</p>
+<p>輸入指令 :<br><code>git clone --depth 1 https://github.com/hexojs/hexo-theme-landscape themes/landscape</code><br>在 themes 資料夾裡會產生 landscape 資料夾。</p>
+<p>自己安裝遇到錯誤，要去<a target="_blank" rel="noopener" href="https://git-scm.com/downloads">安裝 git</a> 就 OK 了<br><img src="https://firebasestorage.googleapis.com/v0/b/lifeblog-84616.appspot.com/o/git%20clone%20%E9%8C%AF%E8%AA%A4.png?alt=media&token=9a422ccd-16f7-4d51-b208-9fd034c3798f"><br>安裝完，輸入 git –version 可看版本。</p>
+<p>在 themes 資料夾 → landscape 資料夾 → 有一個 _config.yml 檔案，</p>
+<ul>
+<li>01.更改 menu 選單，改成中文字或是新增頁面<br>在<code>#menu</code>的地方</li>
+</ul>
+<p><img src="https://firebasestorage.googleapis.com/v0/b/lifeblog-84616.appspot.com/o/%E6%9B%B4%E6%94%B9menu.jpg?alt=media&token=08ba3efd-7d9e-4744-9995-c52994618a35"></p>
+<ul>
+<li>02.寫上要使用的模板名稱，找到<code>theme</code><br><code># Extensions</code><br><code>## Plugins: https://hexo.io/plugins/</code></li>
+</ul>
+<p><code>## Themes: https://hexo.io/themes/</code><br><code>theme: landscape</code> → 在 theme 後方寫上 landscape </p>
+<p>下一集準備連結 GitHub ~</p>
+</article><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/jingblog/tags/Hexo%E6%9E%B6%E7%AB%99/">Hexo架站</a><a class="post-meta__tags" href="/jingblog/tags/Hexo/">Hexo</a></div><div class="post_share"><div class="social-share" data-image="https://d33wubrfki0l68.cloudfront.net/6657ba50e702d84afb32fe846bed54fba1a77add/827ae/logo.svg" data-sites="facebook,twitter"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.3/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.3/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/jingblog/css/css%20mask%E9%81%AE%E7%BD%A9%E5%92%8Cbackground-clip%E6%96%87%E5%AD%97%E9%81%AE%E7%BD%A9/" title="css mask 遮罩 與 background-clip 文字遮罩用法案例"><img class="cover" src="https://firebasestorage.googleapis.com/v0/b/lifeblog-84616.appspot.com/o/2024-06-15%20002852%20(1).png?alt=media&amp;token=a7ae7dc8-1a54-4409-a0f0-57572184b52d" onerror="onerror=null;src='/jingblog/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">css mask 遮罩 與 background-clip 文字遮罩用法案例</div></div></a></div><div class="next-post pull-right"><a href="/jingblog/markdown%E8%AA%9E%E6%B3%95/" title="新文章"><div class="cover" style="background: var(--default-bg-color)"></div><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">新文章</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>相關推薦</span></div><div class="relatedPosts-list"><div><a href="/jingblog/HexoAndGithub2/" title="Hexo + Github 免費架站筆記 (二) 將網站放到 GitHub"><img class="cover" src="https://d33wubrfki0l68.cloudfront.net/6657ba50e702d84afb32fe846bed54fba1a77add/827ae/logo.svg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2024-06-16</div><div class="title">Hexo + Github 免費架站筆記 (二) 將網站放到 GitHub</div></div></a></div><div><a href="/jingblog/Hexo%E9%83%A8%E8%90%BD%E6%A0%BC%E5%9C%96%E7%89%87%E6%94%BE%E5%93%AA%E9%82%8A-%E5%85%8D%E8%B2%BB%E5%9C%96%E5%BA%8A%E6%9C%8D%E5%8B%99%E4%BB%8B%E7%B4%B9/" title="Hexo部落格圖片放哪邊? 免費圖床服務介紹"><img class="cover" src="https://d33wubrfki0l68.cloudfront.net/6657ba50e702d84afb32fe846bed54fba1a77add/827ae/logo.svg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2024-06-17</div><div class="title">Hexo部落格圖片放哪邊? 免費圖床服務介紹</div></div></a></div></div></div></div><div class="aside-content" id="aside-content"><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目錄</span><span class="toc-percentage"></span></div><div class="toc-content is-expand"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Hexo-%E9%83%A8%E8%90%BD%E6%A0%BC%E6%9E%B6%E7%AB%99%E4%BB%BB%E5%8B%99%EF%BC%8C%E5%85%88%E6%8A%8A%E7%92%B0%E5%A2%83%E6%9E%B6%E8%B5%B7%E4%BE%86"><span class="toc-number">1.</span> <span class="toc-text">Hexo 部落格架站任務，先把環境架起來</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%96%B0%E5%A2%9E%E4%B8%80%E5%80%8B%E4%BD%A0%E6%94%BE-blog-%E6%AA%94%E6%A1%88%E7%9A%84%E8%B3%87%E6%96%99%E5%A4%BE-%E8%88%87-%E7%B5%82%E7%AB%AF%E6%A9%9F%E6%93%8D%E4%BD%9C"><span class="toc-number">2.</span> <span class="toc-text">新增一個你放 blog 檔案的資料夾 與 終端機操作</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#hexo%E6%8C%87%E4%BB%A4"><span class="toc-number">3.</span> <span class="toc-text">hexo指令</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#01-%E5%BB%BA%E7%AB%8B%E9%83%A8%E8%90%BD%E6%A0%BC-hexo-init"><span class="toc-number">3.1.</span> <span class="toc-text">01.建立部落格 : hexo init</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#02-%E9%96%8B%E5%95%9F%E4%BC%BA%E6%9C%8D%E5%99%A8-hexo-server"><span class="toc-number">3.2.</span> <span class="toc-text">02.開啟伺服器 : hexo server</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#03-%E8%BC%B8%E5%87%BA%E5%AF%A6%E9%9A%9B%E7%B6%B2%E9%A0%81-hexo-generate"><span class="toc-number">3.3.</span> <span class="toc-text">03.輸出實際網頁 : hexo generate</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#04-%E6%96%B0%E5%A2%9E%E4%B8%80%E7%AF%87%E9%83%A8%E8%90%BD%E6%A0%BC-hexo-new-%E2%80%9C%E9%83%A8%E8%90%BD%E6%A0%BC%E6%A8%99%E9%A1%8C%E2%80%9D"><span class="toc-number">3.4.</span> <span class="toc-text">04.新增一篇部落格 : hexo new “部落格標題”</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#05-%E6%96%B0%E5%A2%9E%E9%A0%81%E9%9D%A2-hexo-new-page-%E9%A0%81%E9%9D%A2%E5%90%8D%E7%A8%B1"><span class="toc-number">3.5.</span> <span class="toc-text">05.新增頁面 : hexo new page 頁面名稱</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#06-%E6%B8%85%E9%99%A4%E5%BF%AB%E5%8F%96-hexo-clean"><span class="toc-number">3.6.</span> <span class="toc-text">06. 清除快取 : hexo clean</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#07-%E9%83%A8%E5%B1%AC%E7%B6%B2%E7%AB%99-hexo-deploy"><span class="toc-number">3.7.</span> <span class="toc-text">07. 部屬網站 : hexo deploy</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%85%A8%E7%AB%99%E8%A8%AD%E5%AE%9A"><span class="toc-number">4.</span> <span class="toc-text">全站設定 :</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%89%E8%A3%9D-theme-%E5%85%A7%E5%BB%BA%E6%A8%A3%E7%89%88"><span class="toc-number">5.</span> <span class="toc-text">安裝 theme 內建樣版</span></a></li></ol></div></div></div></div></main><footer id="footer" style="background: #232323"><div id="footer-wrap"><div class="copyright">&copy;2024 By jing</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主題 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="閱讀模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="淺色和深色模式轉換"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="單欄和雙欄切換"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="設定"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目錄"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="返回頂部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/jingblog/js/utils.js?v=4.13.0"></script><script src="/jingblog/js/main.js?v=4.13.0"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0.33/dist/fancybox/fancybox.umd.min.js"></script><script src="https://cdn.jsdelivr.net/npm/node-snackbar@0.1.16/dist/snackbar.min.js"></script><div class="js-pjax"></div><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.3/dist/activate-power-mode.min.js"></script><script>POWERMODE.colorful = true;
+POWERMODE.shake = true;
+POWERMODE.mobile = false;
+document.body.addEventListener('input', POWERMODE);
+</script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜尋</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  資料庫載入中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜尋文章" type="text"/></div></div><hr/><div id="local-search-results"></div><div id="local-search-stats-wrap"></div></div></div><div id="search-mask"></div><script src="/jingblog/js/search/local-search.js?v=4.13.0"></script></div></div></body></html>
